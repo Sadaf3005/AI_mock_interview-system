@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Select Role</title>
+
+    <link rel="stylesheet"
+    href="{{ url_for('static', filename='test.css') }}">
+</head>
+
+<body>
+
+<div class="container">
+
+    <h1>Select Interview Role</h1>
+
+    <form action="/interview" method="get">
+
+        <input type="radio" name="role" value="Python Developer">
+        Python Developer
+
+        <br><br>
+
+        <input type="radio" name="role" value="Data Analyst">
+        Data Analyst
+
+        <br><br>
+
+        <input type="radio" name="role" value="AI/ML Engineer">
+        AI/ML Engineer
+
+        <br><br>
+
+        <button class="btn" type="submit">
+            Start Interview
+        </button>
+
+    </form>
+
+</div>
+
+</body>
+</html>

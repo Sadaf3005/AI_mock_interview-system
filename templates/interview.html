@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+    <title>Interview</title>
+
+    <link rel="stylesheet"
+    href="{{ url_for('static', filename='test.css') }}">
+
+</head>
+
+<body>
+
+<div class="interview-card">
+
+    <div class="progress">
+        Question {{ qno }} of {{ total }}
+    </div>
+
+    <h3>Question {{ qno }} of {{ total }}</h3>
+
+<p>{{ question }}</p>
+
+<form action="/answer" method="POST">
+
+    <textarea
+        name="answer"
+        required></textarea>
+
+    <button class="btn" type="submit">
+        Next →
+    </button>
+
+</form>
+
+    </form>
+
+</div>
+
+</body>
+</html>
